@@ -1,0 +1,10 @@
+11:07:55 **** Build of configuration Debug for project led_dynamic_asn3 ****
+make -j12 all 
+arm-none-eabi-size  led_dynamic_asn3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2200	     80	   1904	   4184	   1058	led_dynamic_asn3.elf
+Finished building: default.size.stdout
+ 
+
+11:07:55 Build Finished. 0 errors, 0 warnings. (took 73ms)
+

@@ -1,0 +1,95 @@
+#include <stdint.h>
+#include "stm32f407.h"
+
+inline volatile uint32_t *NVIC_ISER0 = reinterpret_cast<volatile uint32_t*>(0xE000E100);
+inline volatile uint32_t *NVIC_ICPR0 = reinterpret_cast<volatile uint32_t*>(0xE000E280);
+//inline volatile uint32_t *NVIC_IPR7=reinterpret_cast<volatile uint32_t*>(0xE000E41C);
+
+void LED_Init(void) {
+    RCC->AHB1ENR  |=  (1 << 3);           // GPIOD clock
+    GPIOD->MODER  &= ~(3 << (12 * 2));    // clear PD12
+    GPIOD->MODER  |=  (1 << (12 * 2));    // PD12 output
+    GPIOD->ODR    &= ~(1 << 12);          // LED OFF
+}
+
+void USART3_Init(void) {
+
+    // Step 1 — Enable clocks
+    RCC->AHB1ENR  |= (1 << 2);
+    RCC->APB1ENR  |= (1 << 18);
+    GPIOC->MODER  &= ~(3 << 20);
+    GPIOC->MODER  |=  (2 << 20);          // AF mode
+
+    GPIOC->AFR[1] &= ~(0xF << 8);
+    GPIOC->AFR[1] |=  (7 << 8);           // AF7
+
+
+    USART3->BRR    =  0x0683;             // 9600 baud @ 16MHz
+
+    // Step 4 — Enable TX and USART
+    USART3->CR1   |= (1 << 3);            // TE  — transmit enable
+    USART3->CR1   |= (1 << 13);           // UE  — USART enable
+}
+
+void TIM2_Init(void) {
+
+    RCC->APB1ENR  |=  (1 << 0);           // TIM2 clock on
+    TIM2->PSC      =  1599;
+    TIM2->ARR      =  49999;
+
+    TIM2->CNT      =  0;
+
+    TIM2->EGR     |=  (1 << 0);
+    TIM2->SR      &= ~(1 << 0);
+    TIM2->DIER    |=  (1 << 0);           // UIE bit
+
+    *NVIC_ICPR0   |=  (1 << 28);
+  //  NVIC_IPR7     &= ~(0xFF << 0);
+   // NVIC_IPR7     |=  (1 << 4);
+    *NVIC_ISER0    |=  (1 << 28);
+
+    // Step 7 — start timer
+    TIM2->CR1     |=  (1 << 0);           // CEN bit
+}
+
+void USART3_write(uint8_t ch) {
+    while(!(USART3->SR & (1 << 7))) {}    // wait TXE (tx buffer empty)
+    USART3->DR = ch;                       // load character
+    while(!(USART3->SR & (1 << 6))) {}    // wait TC  (transmission complete)
+}
+
+void USART3_write_string(const char* str) {
+    while(*str) {
+        USART3_write(*str++);
+    }
+}
+
+extern "C" void TIM2_IRQHandler(void) {
+    if(TIM2->SR & (1 << 0)) {
+
+        // Step 1 — clear UIF flag FIRST
+        TIM2->SR   &= ~(1 << 0);
+
+        // Step 2 — toggle LED
+        GPIOD->ODR ^=  (1 << 12);
+
+        // Step 3 — send USART message
+        USART3_write_string("TIM2 interrupt fired — 1 second!\r\n");
+    }
+}
+
+int main(void) {
+
+    LED_Init();
+    USART3_Init();
+    TIM2_Init();
+
+    USART3_write_string("System started!\r\n");
+    USART3_write_string("TIM2 interrupt every 1 second...\r\n");
+
+    while(1) {
+
+    }
+
+    return 0;
+}

@@ -1,0 +1,2 @@
+../Src/USART_GENERIC_main.cpp:3:6:void delay()	16	static
+../Src/USART_GENERIC_main.cpp:9:5:int main()	8	static

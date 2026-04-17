@@ -1,0 +1,2 @@
+../Src/switch.cpp:3:1:SWITCH::SWITCH(GPIO_TypeDef*, uint8_t)	24	static
+../Src/switch.cpp:14:9:uint8_t SWITCH::read()	16	static

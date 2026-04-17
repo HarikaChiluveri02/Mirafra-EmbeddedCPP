@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;UART_INTERRUPT_TIMER/Src/main.c&apos; to &apos;TIMER_INT.cpp&apos;" description="Rename resource &apos;main.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Src/main.c" name="TIMER_INT.cpp" stamp="1776089095408" updateReferences="true"/>
+</session>

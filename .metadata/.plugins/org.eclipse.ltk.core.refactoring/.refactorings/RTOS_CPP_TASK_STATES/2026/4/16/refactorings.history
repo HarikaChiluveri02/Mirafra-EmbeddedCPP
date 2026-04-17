@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;RTOS_CPP_TASK_STATES/Core/Src/main.cpp&apos; to &apos;task_states.cpp&apos;" description="Rename resource &apos;main.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/main.cpp" name="task_states.cpp" stamp="1776230784085" updateReferences="true"/>
+</session>

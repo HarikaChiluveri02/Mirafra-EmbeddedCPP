@@ -1,0 +1,10 @@
+10:28:45 **** Incremental Build of configuration Debug for project UART_WRITE_IN_syscall ****
+make -j12 all 
+arm-none-eabi-size  UART_WRITE_IN_syscall.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3872	     92	   1900	   5864	   16e8	UART_WRITE_IN_syscall.elf
+Finished building: default.size.stdout
+ 
+
+10:28:45 Build Finished. 0 errors, 0 warnings. (took 146ms)
+

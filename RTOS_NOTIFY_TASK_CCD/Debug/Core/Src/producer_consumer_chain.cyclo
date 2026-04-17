@@ -1,0 +1,13 @@
+../Core/Src/producer_consumer_chain.cpp:90:5:int main()	5
+../Core/Src/producer_consumer_chain.cpp:181:6:void SystemClock_Config()	3
+../Core/Src/producer_consumer_chain.cpp:227:13:void MX_I2C1_Init()	2
+../Core/Src/producer_consumer_chain.cpp:261:13:void MX_I2S3_Init()	2
+../Core/Src/producer_consumer_chain.cpp:295:13:void MX_SPI1_Init()	2
+../Core/Src/producer_consumer_chain.cpp:333:13:void MX_GPIO_Init()	1
+../Core/Src/producer_consumer_chain.cpp:442:13:void green_task(void*)	1
+../Core/Src/producer_consumer_chain.cpp:451:13:void orange_task(void*)	1
+../Core/Src/producer_consumer_chain.cpp:461:13:void red_task(void*)	1
+../Core/Src/producer_consumer_chain.cpp:471:13:void blue_task(void*)	1
+../Core/Src/producer_consumer_chain.cpp:500:6:void StartDefaultTask(void*)	1
+../Core/Src/producer_consumer_chain.cpp:521:6:void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef*)	2
+../Core/Src/producer_consumer_chain.cpp:538:6:void Error_Handler()	1

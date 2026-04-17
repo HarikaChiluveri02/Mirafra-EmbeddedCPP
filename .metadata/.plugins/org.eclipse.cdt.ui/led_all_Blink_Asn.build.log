@@ -1,0 +1,10 @@
+11:07:55 **** Build of configuration Debug for project led_all_Blink_Asn ****
+make -j12 all 
+arm-none-eabi-size  led_all_Blink_Asn.elf 
+   text	   data	    bss	    dec	    hex	filename
+    892	      0	   1568	   2460	    99c	led_all_Blink_Asn.elf
+Finished building: default.size.stdout
+ 
+
+11:07:55 Build Finished. 0 errors, 0 warnings. (took 70ms)
+

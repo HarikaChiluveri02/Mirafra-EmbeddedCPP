@@ -1,0 +1,4 @@
+"./Src/constexpr_inline_static_classmemfun.o"
+"./Src/syscalls.o"
+"./Src/sysmem.o"
+"./Startup/startup_stm32f407vgtx.o"

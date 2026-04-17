@@ -1,0 +1,4 @@
+"./Src/syscalls.o"
+"./Src/sysmem.o"
+"./Src/uart_write_syscall.o"
+"./Startup/startup_stm32f407vgtx.o"

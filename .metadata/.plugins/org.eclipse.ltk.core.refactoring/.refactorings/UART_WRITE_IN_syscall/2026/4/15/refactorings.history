@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;UART_WRITE_IN_syscall/Src/main.c&apos; to &apos;uart_write_syscall.cpp&apos;" description="Rename resource &apos;main.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Src/main.c" name="uart_write_syscall.cpp" stamp="1775621709058" updateReferences="true"/>
+</session>

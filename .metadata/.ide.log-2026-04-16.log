@@ -1,0 +1,31 @@
+2026-04-16 09:27:57,925 [INFO] Activator:176 - 
+
+
+2026-04-16 09:27:57,929 [INFO] Activator:177 - !SESSION log4j initialized
+2026-04-16 09:28:02,667 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2026-04-16 12:22:26,172 [INFO] Activator:176 - 
+
+
+2026-04-16 12:22:26,174 [INFO] Activator:177 - !SESSION log4j initialized
+2026-04-16 12:22:31,327 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2026-04-16 12:35:02,755 [ERROR] ConfigurationRetriever:142 - IOException on connection: Read timed out
+2026-04-16 12:50:53,961 [ERROR] ConfigurationRetriever:142 - IOException on connection: Read timed out
+2026-04-16 12:50:56,701 [ERROR] AdobePublisher:187 - Exception while getting the server answer: java.net.SocketTimeoutException: Read timed out
+2026-04-16 12:51:01,644 [ERROR] ConfigurationRetriever:142 - IOException on connection: Read timed out
+2026-04-16 12:51:10,003 [ERROR] ConfigurationRetriever:142 - IOException on connection: Read timed out
+2026-04-16 13:15:08,130 [ERROR] AdobePublisher:162 - Exception while opening the connection: java.net.SocketTimeoutException: Read timed out
+2026-04-16 13:15:08,131 [ERROR] AdobePublisher:162 - Exception while opening the connection: java.net.SocketTimeoutException: Read timed out
+2026-04-16 13:15:08,131 [ERROR] AdobePublisher:162 - Exception while opening the connection: java.net.SocketTimeoutException: Read timed out
+2026-04-16 13:15:08,131 [ERROR] AdobePublisher:162 - Exception while opening the connection: java.net.SocketTimeoutException: Read timed out
+2026-04-16 13:15:08,132 [ERROR] AdobePublisher:162 - Exception while opening the connection: java.net.SocketTimeoutException: Read timed out
+2026-04-16 13:15:13,807 [ERROR] ConfigurationRetriever:142 - IOException on connection: Read timed out
+2026-04-16 15:09:23,704 [INFO] Activator:176 - 
+
+
+2026-04-16 15:09:23,705 [INFO] Activator:177 - !SESSION log4j initialized
+2026-04-16 15:09:26,325 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2026-04-16 15:44:20,369 [INFO] Activator:176 - 
+
+
+2026-04-16 15:44:20,370 [INFO] Activator:177 - !SESSION log4j initialized
+2026-04-16 15:44:23,010 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 

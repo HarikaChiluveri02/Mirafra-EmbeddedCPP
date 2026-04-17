@@ -1,0 +1,64 @@
+#include <stdint.h>
+#include "stm32f407.h"
+
+int b_pressed=0;
+// LED INIT
+void LED_Init(void)
+{
+    RCC->AHB1ENR |= (1 << 3);   // Enable GPIOD clock
+
+    GPIOD->MODER &= ~(3 << (12 * 2));
+    GPIOD->MODER |=  (1 << (12 * 2));  // Output mode
+
+    GPIOD->ODR &= ~(1 << 12); // LED OFF
+}
+
+//BUTTON EXTI INIT
+void Button_EXTI_Init(void)
+{
+    /* Enable clocks */
+    RCC->AHB1ENR |= (1 << 0);   // GPIOA
+    RCC->APB2ENR |= (1 << 14);  // SYSCFG
+
+    /* PA1 as input */
+    GPIOA->MODER &= ~(3 << (1 * 2));
+
+    /* Pull-down */
+    GPIOA->PUPDR &= ~(3 << (1 * 2));
+    GPIOA->PUPDR |=  (2 << (1 * 2));  // Pull-down
+
+    /* Map EXTI1 to PA1 */
+    SYSCFG->EXTICR[0] &= ~(0xF << 0);  // 0000 = PA1
+
+    /* Rising edge trigger */
+    EXTI->RTSR |= (1 << 1);  // TR1
+
+    /* Unmask interrupt */
+    EXTI->IMR |= (1 << 1);   //MR1
+
+    /* NVIC Enable (IRQ7 for EXTI1) */
+    *((volatile uint32_t*)0xE000E100) |= (1 << 7);
+}
+
+//ISR
+extern "C" void EXTI0_IRQHandler(void)
+{
+    if (EXTI->PR & (1 << 1))  // Check pending
+    {
+        GPIOD->ODR ^= (1 << 12); // Toggle LED
+
+        EXTI->PR |= (1 << 1); // Clear pending
+    }
+}
+
+/* ---------------- MAIN ---------------- */
+int main(void)
+{
+    LED_Init();
+    Button_EXTI_Init();
+
+    while (1)
+    {
+
+    }
+}

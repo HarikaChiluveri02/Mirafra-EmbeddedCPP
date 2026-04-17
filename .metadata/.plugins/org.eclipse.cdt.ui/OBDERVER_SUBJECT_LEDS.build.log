@@ -1,0 +1,10 @@
+15:18:16 **** Incremental Build of configuration Debug for project OBDERVER_SUBJECT_LEDS ****
+make -j12 all 
+arm-none-eabi-size  OBDERVER_SUBJECT_LEDS.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4784	     92	   1908	   6784	   1a80	OBDERVER_SUBJECT_LEDS.elf
+Finished building: default.size.stdout
+ 
+
+15:18:16 Build Finished. 0 errors, 0 warnings. (took 69ms)
+

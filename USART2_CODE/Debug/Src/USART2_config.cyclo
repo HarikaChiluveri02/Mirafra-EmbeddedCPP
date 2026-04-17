@@ -1,0 +1,5 @@
+/opt/st/stm32cubeide_2.1.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/arm-none-eabi/include/c++/14.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	1
+../Src/USART2_config.cpp:6:6:void USART2_init()	1
+../Src/USART2_config.cpp:32:6:void USART2_write(uint8_t)	3
+../Src/USART2_config.cpp:43:6:void delayMs(int)	3
+../Src/USART2_config.cpp:49:5:int main()	1

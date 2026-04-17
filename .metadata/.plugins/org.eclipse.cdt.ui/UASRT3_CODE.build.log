@@ -1,0 +1,10 @@
+11:07:54 **** Build of configuration Debug for project UASRT3_CODE ****
+make -j12 all 
+arm-none-eabi-size  UASRT3_CODE.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1312	      0	   1568	   2880	    b40	UASRT3_CODE.elf
+Finished building: default.size.stdout
+ 
+
+11:07:54 Build Finished. 0 errors, 0 warnings. (took 67ms)
+

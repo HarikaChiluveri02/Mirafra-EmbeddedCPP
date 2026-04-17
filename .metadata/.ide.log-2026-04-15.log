@@ -1,0 +1,40 @@
+2026-04-15 09:31:29,774 [INFO] Activator:176 - 
+
+
+2026-04-15 09:31:29,780 [INFO] Activator:177 - !SESSION log4j initialized
+2026-04-15 09:31:34,786 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2026-04-15 09:41:11,014 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] Exception in thread "SWV client thread" java.lang.NullPointerException: Cannot invoke "com.st.stm32cube.ide.mcu.debug.swv.core.SWVPlugin.isDebugging()" because "com.st.stm32cube.ide.mcu.debug.swv.core.SWVPlugin.plugin" is null
+2026-04-15 09:41:11,017 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVPlugin.debugTrace(SWVPlugin.java:85)
+2026-04-15 09:41:11,019 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVClient.TRACE(SWVClient.java:768)
+2026-04-15 09:41:11,020 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVClient.readByte(SWVClient.java:296)
+2026-04-15 09:41:11,021 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVClient.getNextByte(SWVClient.java:277)
+2026-04-15 09:41:11,023 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVClient.run(SWVClient.java:313)
+2026-04-15 09:41:21,065 [INFO] Activator:176 - 
+
+
+2026-04-15 09:41:21,067 [INFO] Activator:177 - !SESSION log4j initialized
+2026-04-15 09:41:25,971 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2026-04-15 10:55:54,252 [INFO] Activator:176 - 
+
+
+2026-04-15 10:55:54,253 [INFO] Activator:177 - !SESSION log4j initialized
+2026-04-15 10:55:57,117 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2026-04-15 11:17:47,433 [INFO] Activator:176 - 
+
+
+2026-04-15 11:17:47,434 [INFO] Activator:177 - !SESSION log4j initialized
+2026-04-15 11:17:50,132 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2026-04-15 13:47:11,498 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] Apr 15, 2026 1:47:11 PM org.apache.lucene.internal.vectorization.VectorizationProvider lookup
+2026-04-15 13:47:11,499 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] WARNING: Java vector incubator module is not readable. For optimal vector performance, pass '--add-modules jdk.incubator.vector' to enable Vector API.
+2026-04-15 13:47:11,499 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 
+2026-04-15 16:21:19,020 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 
+2026-04-15 16:21:26,220 [INFO] Activator:176 - 
+
+
+2026-04-15 16:21:26,223 [INFO] Activator:177 - !SESSION log4j initialized
+2026-04-15 16:21:31,026 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2026-04-15 20:19:59,238 [INFO] Activator:176 - 
+
+
+2026-04-15 20:19:59,239 [INFO] Activator:177 - !SESSION log4j initialized
+2026-04-15 20:20:01,610 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 

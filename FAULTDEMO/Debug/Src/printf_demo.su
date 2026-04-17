@@ -1,0 +1,4 @@
+../Src/printf_demo.cpp:62:6:void gpio_init()	4	static
+../Src/printf_demo.cpp:75:9:uint8_t read_pin()	4	static
+../Src/printf_demo.cpp:81:6:void fun()	16	static
+../Src/printf_demo.cpp:89:5:int main()	16	static

@@ -1,0 +1,13 @@
+../Core/Src/CAP_CALB_DIS.cpp:102:5:int main()	6
+../Core/Src/CAP_CALB_DIS.cpp:196:6:void SystemClock_Config()	3
+../Core/Src/CAP_CALB_DIS.cpp:242:13:void MX_I2C1_Init()	2
+../Core/Src/CAP_CALB_DIS.cpp:276:13:void MX_I2S3_Init()	2
+../Core/Src/CAP_CALB_DIS.cpp:310:13:void MX_SPI1_Init()	2
+../Core/Src/CAP_CALB_DIS.cpp:348:13:void MX_GPIO_Init()	1
+../Core/Src/CAP_CALB_DIS.cpp:457:13:void capture_task(void*)	1
+../Core/Src/CAP_CALB_DIS.cpp:468:13:void calibarate_task(void*)	1
+../Core/Src/CAP_CALB_DIS.cpp:479:13:void display_task(void*)	5
+../Core/Src/CAP_CALB_DIS.cpp:503:13:void AC_task(void*)	1
+../Core/Src/CAP_CALB_DIS.cpp:540:6:void StartDefaultTask(void*)	1
+../Core/Src/CAP_CALB_DIS.cpp:561:6:void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef*)	2
+../Core/Src/CAP_CALB_DIS.cpp:578:6:void Error_Handler()	1

@@ -1,0 +1,10 @@
+11:07:53 **** Build of configuration Debug for project GPIOA_EXT_CFG_LED ****
+make -j12 all 
+arm-none-eabi-size  GPIOA_EXT_CFG_LED.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1624	      0	   1568	   3192	    c78	GPIOA_EXT_CFG_LED.elf
+Finished building: default.size.stdout
+ 
+
+11:07:53 Build Finished. 0 errors, 0 warnings. (took 67ms)
+

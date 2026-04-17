@@ -1,0 +1,11 @@
+../Src/gpio_bsrr.cpp:7:17:static void GPIO::enable_clock()	1
+../Src/gpio_bsrr.cpp:12:17:static void GPIO::set_input()	1
+../Src/gpio_bsrr.cpp:16:17:static void GPIO::set_output(uint32_t)	1
+../Src/gpio_bsrr.cpp:21:21:static uint32_t GPIO::read(uint32_t)	1
+../Src/gpio_bsrr.cpp:24:17:static void GPIO::set(uint32_t)	1
+../Src/gpio_bsrr.cpp:27:17:static void GPIO::reset(uint32_t)	1
+../Src/gpio_bsrr.cpp:30:17:static void GPIO::toggle(uint32_t)	2
+../Src/gpio_bsrr.cpp:46:14:LED::LED(uint32_t)	1
+../Src/gpio_bsrr.cpp:51:10:void LED::toggle()	1
+../Src/gpio_bsrr.cpp:56:6:void delay()	2
+../Src/gpio_bsrr.cpp:61:5:int main()	2

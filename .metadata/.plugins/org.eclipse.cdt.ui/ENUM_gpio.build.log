@@ -1,0 +1,10 @@
+11:41:29 **** Incremental Build of configuration Debug for project ENUM_gpio ****
+make -j12 all 
+arm-none-eabi-size  ENUM_gpio.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1068	      0	   1568	   2636	    a4c	ENUM_gpio.elf
+Finished building: default.size.stdout
+ 
+
+11:41:29 Build Finished. 0 errors, 0 warnings. (took 169ms)
+

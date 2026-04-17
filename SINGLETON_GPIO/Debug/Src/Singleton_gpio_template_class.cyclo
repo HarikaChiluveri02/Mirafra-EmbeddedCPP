@@ -1,0 +1,13 @@
+../Src/Singleton_gpio_template_class.cpp:8:17:static void GPIO::enable_clock()	1
+../Src/Singleton_gpio_template_class.cpp:14:17:static void GPIO::set_output(uint32_t)	1
+../Src/Singleton_gpio_template_class.cpp:24:17:static void GPIO::on(uint32_t)	1
+../Src/Singleton_gpio_template_class.cpp:28:17:static void GPIO::off(uint32_t)	1
+../Src/Singleton_gpio_template_class.cpp:77:6:void delay()	2
+../Src/Singleton_gpio_template_class.cpp:85:5:int main()	1
+../Src/Singleton_gpio_template_class.cpp:45:14:static LED<pin>& LED<pin>::instance() [with unsigned char pin = 12]	3
+../Src/Singleton_gpio_template_class.cpp:45:14:static LED<pin>& LED<pin>::instance() [with unsigned char pin = 14]	3
+../Src/Singleton_gpio_template_class.cpp:61:10:void LED<pin>::on() [with unsigned char pin = 12]	1
+../Src/Singleton_gpio_template_class.cpp:65:10:void LED<pin>::off() [with unsigned char pin = 12]	1
+../Src/Singleton_gpio_template_class.cpp:61:10:void LED<pin>::on() [with unsigned char pin = 14]	1
+../Src/Singleton_gpio_template_class.cpp:71:5:LED<pin>::LED() [with unsigned char pin = 12]	1
+../Src/Singleton_gpio_template_class.cpp:71:5:LED<pin>::LED() [with unsigned char pin = 14]	1

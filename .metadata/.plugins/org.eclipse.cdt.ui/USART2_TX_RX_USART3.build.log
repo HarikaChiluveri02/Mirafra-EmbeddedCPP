@@ -1,0 +1,10 @@
+11:07:54 **** Build of configuration Debug for project USART2_TX_RX_USART3 ****
+make -j12 all 
+arm-none-eabi-size  USART2_TX_RX_USART3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1692	      0	   1616	   3308	    cec	USART2_TX_RX_USART3.elf
+Finished building: default.size.stdout
+ 
+
+11:07:54 Build Finished. 0 errors, 0 warnings. (took 67ms)
+

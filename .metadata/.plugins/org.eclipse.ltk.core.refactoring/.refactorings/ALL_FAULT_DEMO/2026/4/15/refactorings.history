@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ALL_FAULT_DEMO/Src/usagefault.cpp&apos; to &apos;all_fault.cpp&apos;" description="Rename resource &apos;usagefault.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Src/usagefault.cpp" name="all_fault.cpp" stamp="1775644659174" updateReferences="true"/>
+</session>

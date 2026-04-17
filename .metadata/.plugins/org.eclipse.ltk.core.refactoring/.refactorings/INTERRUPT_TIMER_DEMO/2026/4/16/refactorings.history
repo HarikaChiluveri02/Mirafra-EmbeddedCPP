@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;INTERRUPT_TIMER_DEMO/Src/main.c&apos; to &apos;INT_TIMER.cpp&apos;" description="Rename resource &apos;main.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Src/main.c" name="INT_TIMER.cpp" stamp="1776089514154" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;INTERRUPT_TIMER_DEMO/Src/INT_TIMER.cpp&apos; to &apos;INT_TIMER_printf.cpp&apos;" description="Rename resource &apos;INT_TIMER.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Src/INT_TIMER.cpp" name="INT_TIMER_printf.cpp" stamp="1776089564115" updateReferences="true"/>
+</session>

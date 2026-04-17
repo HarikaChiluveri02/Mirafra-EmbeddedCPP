@@ -1,0 +1,5 @@
+../Src/two_boards_comm.cpp:15:6:void delayMs(int)	3
+../Src/two_boards_comm.cpp:21:6:void USART3_init()	1
+../Src/two_boards_comm.cpp:54:6:void USART3_write(uint8_t)	3
+../Src/two_boards_comm.cpp:61:6:void button_init()	1
+../Src/two_boards_comm.cpp:82:5:int main()	21

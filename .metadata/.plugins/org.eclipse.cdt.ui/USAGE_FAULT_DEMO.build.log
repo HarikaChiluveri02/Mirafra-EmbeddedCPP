@@ -1,0 +1,10 @@
+16:07:57 **** Incremental Build of configuration Debug for project USAGE_FAULT_DEMO ****
+make -j12 all 
+arm-none-eabi-size  USAGE_FAULT_DEMO.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10308	     92	   1900	  12300	   300c	USAGE_FAULT_DEMO.elf
+Finished building: default.size.stdout
+ 
+
+16:07:58 Build Finished. 0 errors, 0 warnings. (took 158ms)
+

@@ -1,0 +1,17 @@
+13:55:25 **** Incremental Build of configuration Debug for project ALL_FAULT_DEMO ****
+make -j12 all 
+arm-none-eabi-g++ "../Src/all_fault.cpp" -mcpu=cortex-m4 -std=gnu++20 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/all_fault.d" -MT"Src/all_fault.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/all_fault.o"
+arm-none-eabi-g++ -o "ALL_FAULT_DEMO.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/dell/STM32CubeIDE/workspace_2.1.1/ALL_FAULT_DEMO/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ALL_FAULT_DEMO.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: ALL_FAULT_DEMO.elf
+ 
+arm-none-eabi-size  ALL_FAULT_DEMO.elf 
+arm-none-eabi-objdump -h -S ALL_FAULT_DEMO.elf  > "ALL_FAULT_DEMO.list"
+   text	   data	    bss	    dec	    hex	filename
+  10804	     92	   1900	  12796	   31fc	ALL_FAULT_DEMO.elf
+Finished building: default.size.stdout
+ 
+Finished building: ALL_FAULT_DEMO.list
+ 
+
+13:55:25 Build Finished. 0 errors, 0 warnings. (took 403ms)
+

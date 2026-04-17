@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;FRIEND_NON_MEM/Src/main.c&apos; to &apos;friend_code.cpp&apos;" description="Rename resource &apos;main.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Src/main.c" name="friend_code.cpp" stamp="1776095002285" updateReferences="true"/>
+</session>

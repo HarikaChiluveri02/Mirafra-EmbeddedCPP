@@ -1,0 +1,8 @@
+../Core/Src/task_states.cpp:83:5:int main()	4
+../Core/Src/task_states.cpp:148:6:void SystemClock_Config()	3
+../Core/Src/task_states.cpp:192:13:void MX_GPIO_Init()	1
+../Core/Src/task_states.cpp:328:13:void led_green_handler(void*)	1
+../Core/Src/task_states.cpp:343:13:void led_orange_handler(void*)	1
+../Core/Src/task_states.cpp:357:13:void led_red_handler(void*)	1
+../Core/Src/task_states.cpp:384:6:void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef*)	2
+../Core/Src/task_states.cpp:401:6:void Error_Handler()	1

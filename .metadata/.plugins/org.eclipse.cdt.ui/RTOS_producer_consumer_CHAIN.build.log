@@ -1,0 +1,10 @@
+13:15:06 **** Incremental Build of configuration Debug for project RTOS_producer_consumer_CHAIN ****
+make -j12 all 
+arm-none-eabi-size  RTOS_producer_consumer_CHAIN.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32140	    104	  21912	  54156	   d38c	RTOS_producer_consumer_CHAIN.elf
+Finished building: default.size.stdout
+ 
+
+13:15:07 Build Finished. 0 errors, 0 warnings. (took 74ms)
+

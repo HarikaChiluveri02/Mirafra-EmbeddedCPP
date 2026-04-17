@@ -1,0 +1,16 @@
+../Core/Src/USART_mutex.cpp:101:5:int main()	2
+../Core/Src/USART_mutex.cpp:167:6:void SystemClock_Config()	3
+../Core/Src/USART_mutex.cpp:213:13:void MX_I2C1_Init()	2
+../Core/Src/USART_mutex.cpp:247:13:void MX_I2S3_Init()	2
+../Core/Src/USART_mutex.cpp:281:13:void MX_SPI1_Init()	2
+../Core/Src/USART_mutex.cpp:319:13:void MX_GPIO_Init()	1
+../Core/Src/USART_mutex.cpp:415:6:void USART3_init()	1
+../Core/Src/USART_mutex.cpp:447:6:void USART3_write(uint8_t)	2
+../Core/Src/USART_mutex.cpp:456:6:void USART3_write_string(const char*)	2
+../Core/Src/USART_mutex.cpp:467:6:void LED_init()	1
+../Core/Src/USART_mutex.cpp:478:6:void delayMs(int)	3
+../Core/Src/USART_mutex.cpp:483:13:void Task_Send1(void*)	1
+../Core/Src/USART_mutex.cpp:497:13:void Task_Send0(void*)	1
+../Core/Src/USART_mutex.cpp:521:6:void StartDefaultTask(void*)	1
+../Core/Src/USART_mutex.cpp:542:6:void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef*)	2
+../Core/Src/USART_mutex.cpp:559:6:void Error_Handler()	1

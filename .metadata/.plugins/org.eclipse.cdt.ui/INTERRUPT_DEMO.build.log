@@ -1,0 +1,10 @@
+12:10:46 **** Incremental Build of configuration Debug for project INTERRUPT_DEMO ****
+make -j12 all 
+arm-none-eabi-size  INTERRUPT_DEMO.elf 
+   text	   data	    bss	    dec	    hex	filename
+    944	      0	   1568	   2512	    9d0	INTERRUPT_DEMO.elf
+Finished building: default.size.stdout
+ 
+
+12:10:46 Build Finished. 0 errors, 0 warnings. (took 152ms)
+

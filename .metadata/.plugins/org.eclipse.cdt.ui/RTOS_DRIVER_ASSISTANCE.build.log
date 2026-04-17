@@ -1,0 +1,29 @@
+09:35:52 **** Incremental Build of configuration Debug for project RTOS_DRIVER_ASSISTANCE ****
+make -j12 all 
+arm-none-eabi-g++ "../Core/Src/rtos_driver_assistance.cpp" -mcpu=cortex-m4 -std=gnu++17 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/rtos_driver_assistance.d" -MT"Core/Src/rtos_driver_assistance.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/rtos_driver_assistance.o"
+../Core/Src/rtos_driver_assistance.cpp: In function 'void vDriverAssistanceTask(void*)':
+../Core/Src/rtos_driver_assistance.cpp:345:17: warning: unused variable 'driverPrio' [-Wunused-variable]
+  345 |     UBaseType_t driverPrio = uxTaskPriorityGet(NULL);
+      |                 ^~~~~~~~~~
+../Core/Src/rtos_driver_assistance.cpp: In function 'void vEmergencySystemTask(void*)':
+../Core/Src/rtos_driver_assistance.cpp:379:17: warning: unused variable 'driverPrio' [-Wunused-variable]
+  379 |     UBaseType_t driverPrio = uxTaskPriorityGet(xDriverHandle);
+      |                 ^~~~~~~~~~
+../Core/Src/rtos_driver_assistance.cpp:380:17: warning: unused variable 'Emergencyprio' [-Wunused-variable]
+  380 |     UBaseType_t Emergencyprio = uxTaskPriorityGet(NULL);
+      |                 ^~~~~~~~~~~~~
+arm-none-eabi-g++ -o "RTOS_DRIVER_ASSISTANCE.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/dell/STM32CubeIDE/workspace_2.1.1/RTOS_DRIVER_ASSISTANCE/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RTOS_DRIVER_ASSISTANCE.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+/opt/st/stm32cubeide_2.1.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: warning: RTOS_DRIVER_ASSISTANCE.elf has a LOAD segment with RWX permissions
+Finished building target: RTOS_DRIVER_ASSISTANCE.elf
+ 
+arm-none-eabi-size  RTOS_DRIVER_ASSISTANCE.elf 
+arm-none-eabi-objdump -h -S RTOS_DRIVER_ASSISTANCE.elf  > "RTOS_DRIVER_ASSISTANCE.list"
+   text	   data	    bss	    dec	    hex	filename
+  27148	    108	  21684	  48940	   bf2c	RTOS_DRIVER_ASSISTANCE.elf
+Finished building: default.size.stdout
+ 
+Finished building: RTOS_DRIVER_ASSISTANCE.list
+ 
+
+09:35:53 Build Finished. 0 errors, 4 warnings. (took 796ms)
+

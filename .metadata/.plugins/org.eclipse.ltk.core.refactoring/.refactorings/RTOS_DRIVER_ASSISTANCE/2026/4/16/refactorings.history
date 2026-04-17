@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;RTOS_DRIVER_ASSISTANCE/Core/Src/PRIORITY_set_get_rtos.cpp&apos; to &apos;rtos_driver_assistance.cpp&apos;" description="Rename resource &apos;PRIORITY_set_get_rtos.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/PRIORITY_set_get_rtos.cpp" name="rtos_driver_assistance.cpp" stamp="1776249981682" updateReferences="true"/>
+</session>

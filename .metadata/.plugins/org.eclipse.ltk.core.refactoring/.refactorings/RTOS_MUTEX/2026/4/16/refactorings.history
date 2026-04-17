@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;RTOS_MUTEX/Core/Src/producer_consumer.cpp&apos; to &apos;MUTEX.cpp&apos;" description="Rename resource &apos;producer_consumer.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/producer_consumer.cpp" name="MUTEX.cpp" stamp="1776407829528" updateReferences="true"/>
+</session>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;RTOS_UART/Core/Src/task_states.cpp&apos; to &apos;USART.cpp&apos;" description="Rename resource &apos;task_states.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/task_states.cpp" name="USART.cpp" stamp="1776413304349" updateReferences="true"/>
+</session>

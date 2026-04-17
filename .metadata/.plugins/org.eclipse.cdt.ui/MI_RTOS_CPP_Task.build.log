@@ -1,0 +1,10 @@
+10:00:12 **** Incremental Build of configuration Debug for project MI_RTOS_CPP_Task ****
+make -j12 all 
+arm-none-eabi-size  MI_RTOS_CPP_Task.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26752	    108	  21652	  48512	   bd80	MI_RTOS_CPP_Task.elf
+Finished building: default.size.stdout
+ 
+
+10:00:12 Build Finished. 0 errors, 0 warnings. (took 139ms)
+

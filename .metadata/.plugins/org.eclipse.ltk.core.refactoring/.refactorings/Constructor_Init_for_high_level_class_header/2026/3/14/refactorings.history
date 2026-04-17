@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Constructor_Init_for_high_level_class_header/Src/cons_init.cpp&apos; to &apos;cons_init_header.cpp&apos;" description="Rename resource &apos;cons_init.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Src/cons_init.cpp" name="cons_init_header.cpp" stamp="1774857899758" updateReferences="true"/>
+</session>

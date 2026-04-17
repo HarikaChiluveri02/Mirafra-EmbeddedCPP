@@ -1,0 +1,10 @@
+11:07:55 **** Build of configuration Debug for project complete_GPIO_Driver_CODE ****
+make -j12 all 
+arm-none-eabi-size  complete_GPIO_Driver_CODE.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1068	      0	   1568	   2636	    a4c	complete_GPIO_Driver_CODE.elf
+Finished building: default.size.stdout
+ 
+
+11:07:55 Build Finished. 0 errors, 0 warnings. (took 68ms)
+

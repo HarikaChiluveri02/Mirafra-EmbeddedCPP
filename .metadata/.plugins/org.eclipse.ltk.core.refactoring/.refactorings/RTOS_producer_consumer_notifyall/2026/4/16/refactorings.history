@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;RTOS_producer_consumer_notifyall/Core/Src/producer_consumer_chain.cpp&apos; to &apos;producer_consumer_notifyall.cpp&apos;" description="Rename resource &apos;producer_consumer_chain.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/producer_consumer_chain.cpp" name="producer_consumer_notifyall.cpp" stamp="1776326360516" updateReferences="true"/>
+</session>

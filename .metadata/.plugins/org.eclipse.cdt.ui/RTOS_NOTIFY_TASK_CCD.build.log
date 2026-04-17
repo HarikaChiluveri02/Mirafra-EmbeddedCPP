@@ -1,0 +1,10 @@
+10:49:06 **** Incremental Build of configuration Debug for project RTOS_NOTIFY_TASK_CCD ****
+make -j12 all 
+arm-none-eabi-size  RTOS_NOTIFY_TASK_CCD.elf 
+   text	   data	    bss	    dec	    hex	filename
+  40272	    116	  21940	  62328	   f378	RTOS_NOTIFY_TASK_CCD.elf
+Finished building: default.size.stdout
+ 
+
+10:49:06 Build Finished. 0 errors, 0 warnings. (took 73ms)
+

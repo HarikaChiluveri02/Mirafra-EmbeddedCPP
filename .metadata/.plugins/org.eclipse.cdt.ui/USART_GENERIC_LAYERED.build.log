@@ -1,0 +1,10 @@
+16:06:48 **** Incremental Build of configuration Debug for project USART_GENERIC_LAYERED ****
+make -j12 all 
+arm-none-eabi-size  USART_GENERIC_LAYERED.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1480	      0	   1592	   3072	    c00	USART_GENERIC_LAYERED.elf
+Finished building: default.size.stdout
+ 
+
+16:06:48 Build Finished. 0 errors, 0 warnings. (took 144ms)
+

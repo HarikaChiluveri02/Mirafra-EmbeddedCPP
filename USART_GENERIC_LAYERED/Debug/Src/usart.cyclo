@@ -1,0 +1,7 @@
+../Src/usart.cpp:9:13:void GPIO_EnableClock(GPIO_TypeDef*)	5
+../Src/usart.cpp:22:13:void USART_EnableClock(USART_TypeDef*)	4
+../Src/usart.cpp:32:13:void GPIO_Config_AF(GPIO_PinConfig_t*)	2
+../Src/usart.cpp:53:6:void USART_Init(USART_Handle_t*)	1
+../Src/usart.cpp:74:6:void USART_SendChar(USART_Handle_t*, char)	2
+../Src/usart.cpp:80:6:void USART_SendString(USART_Handle_t*, const char*)	2
+../Src/usart.cpp:88:6:char USART_ReadChar(USART_Handle_t*)	2

@@ -1,0 +1,147 @@
+/* USER CODE BEGIN Header */
+/**
+  ******************************************************************************
+  * @file           : main.c
+  * @brief          : Main program body
+  ******************************************************************************
+  * @attention
+  *
+  * Copyright (c) 2026 STMicroelectronics.
+  * All rights reserved.
+  *
+  * This software is licensed under terms that can be found in the LICENSE file
+  * in the root directory of this software component.
+  * If no LICENSE file comes with this software, it is provided AS-IS.
+  *
+  ******************************************************************************
+  */
+/* USER CODE END Header */
+/* Includes ------------------------------------------------------------------*/
+#include "main.h"
+#include "cmsis_os.h"
+#include "usb_host.h"
+#include "event_groups.h"
+
+/* Private includes ----------------------------------------------------------*/
+/* USER CODE BEGIN Includes */
+
+/* USER CODE END Includes */
+
+/* Private typedef -----------------------------------------------------------*/
+/* USER CODE BEGIN PTD */
+
+/* USER CODE END PTD */
+
+/* Private define ------------------------------------------------------------*/
+/* USER CODE BEGIN PD */
+/* USER CODE END PD */
+
+/* Private macro -------------------------------------------------------------*/
+/* USER CODE BEGIN PM */
+
+/* USER CODE END PM */
+
+/* Private variables ---------------------------------------------------------*/
+ I2C_HandleTypeDef hi2c1;
+
+I2S_HandleTypeDef hi2s3;
+
+SPI_HandleTypeDef hspi1;
+
+/* Definitions for defaultTask */
+osThreadId_t defaultTaskHandle;
+const osThreadAttr_t defaultTask_attributes = {
+  .name = "defaultTask",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityNormal,
+};
+/* USER CODE BEGIN PV */
+
+/* USER CODE END PV */
+
+/* Private function prototypes -----------------------------------------------*/
+void SystemClock_Config(void);
+static void MX_GPIO_Init(void);
+static void MX_I2C1_Init(void);
+static void MX_I2S3_Init(void);
+static void MX_SPI1_Init(void);
+void StartDefaultTask(void *argument);
+
+/* USER CODE BEGIN PFP */
+//static void receiver_task(void* parameters);
+//static void sender_task(void* parameters);
+
+/* USER CODE END PFP */
+
+/* Private user code ---------------------------------------------------------*/
+/* USER CODE BEGIN 0 */
+//Task Handlers
+/* Task handles */
+//Event Group (broadcast signaling)
+EventGroupHandle_t led_event_group;
+/* Event bits */
+#define GREEN_BIT   (1 << 0)
+#define ORANGE_BIT  (1 << 1)
+#define RED_BIT     (1 << 2)
+
+
+BaseType_t status;
+/* USER CODE END 0 */
+
+/**
+  * @brief  The application entry point.
+  * @retval int
+
+  */
+static void green_task(void *params);
+
+static void orange_task(void *params);
+
+static void red_task(void *params);
+
+static void broadcast_task(void *params); // Notify all
+
+int main(void)
+{
+  /* USER CODE BEGIN 1 */
+
+  /* USER CODE END 1 */
+
+  /* MCU Configuration--------------------------------------------------------*/
+
+  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
+  HAL_Init();
+
+  /* USER CODE BEGIN Init */
+
+  /* USER CODE END Init */
+
+  /* Configure the system clock */
+  SystemClock_Config();
+
+  /* USER CODE BEGIN SysInit */
+
+  /* USER CODE END SysInit */
+
+  /* Initialize all configured peripherals */
+  MX_GPIO_Init();
+  MX_I2C1_Init();
+  MX_I2S3_Init();
+  MX_SPI1_Init();
+  /* USER CODE BEGIN 2 */
+
+  /* Create Event Group */
+  led_event_group = xEventGroupCreate(); // dynamic - FreeRTOS Heap
+  configASSERT(led_event_group != NULL);
+
+  /* Create tasks */
+  // 3 LED Task can be grouped together- priority 2
+      status = xTaskCreate(green_task, "GREEN", 200, NULL, 2, NULL);
+      configASSERT(status == pdPASS);
+      xTaskCreate(orange_task, "ORANGE", 200, NULL, 2, NULL);
+      configASSERT(status == pdPASS);
+      xTaskCreate(red_task, "RED", 200, NULL, 2, NULL);
+      configASSERT(status == pdPASS);
+
+      //Notifyall with higher priority
+      xTaskCreate(broadcast_task, "Notify

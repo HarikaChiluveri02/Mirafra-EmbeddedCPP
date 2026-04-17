@@ -1,0 +1,4 @@
+"./Src/cons_init_header.o"
+"./Src/syscalls.o"
+"./Src/sysmem.o"
+"./Startup/startup_stm32f407vgtx.o"

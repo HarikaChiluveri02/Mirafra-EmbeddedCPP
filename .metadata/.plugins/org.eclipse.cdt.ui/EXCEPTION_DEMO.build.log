@@ -1,0 +1,17 @@
+11:43:14 **** Incremental Build of configuration Debug for project EXCEPTION_DEMO ****
+make -j12 all 
+arm-none-eabi-g++ "../Src/exceptional_handling.cpp" -mcpu=cortex-m4 -std=gnu++20 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fexceptions -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/exceptional_handling.d" -MT"Src/exceptional_handling.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/exceptional_handling.o"
+arm-none-eabi-g++ -o "EXCEPTION_DEMO.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/dell/STM32CubeIDE/workspace_2.1.1/EXCEPTION_DEMO/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EXCEPTION_DEMO.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: EXCEPTION_DEMO.elf
+ 
+arm-none-eabi-size  EXCEPTION_DEMO.elf 
+arm-none-eabi-objdump -h -S EXCEPTION_DEMO.elf  > "EXCEPTION_DEMO.list"
+   text	   data	    bss	    dec	    hex	filename
+  11688	     96	   1936	  13720	   3598	EXCEPTION_DEMO.elf
+Finished building: default.size.stdout
+ 
+Finished building: EXCEPTION_DEMO.list
+ 
+
+11:43:14 Build Finished. 0 errors, 0 warnings. (took 223ms)
+

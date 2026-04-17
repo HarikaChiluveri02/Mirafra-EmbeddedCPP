@@ -1,0 +1,10 @@
+15:13:36 **** Incremental Build of configuration Debug for project RTOS_UART_MUTEX ****
+make -j12 all 
+arm-none-eabi-size  RTOS_UART_MUTEX.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32956	    104	  21896	  54956	   d6ac	RTOS_UART_MUTEX.elf
+Finished building: default.size.stdout
+ 
+
+15:13:36 Build Finished. 0 errors, 0 warnings. (took 124ms)
+

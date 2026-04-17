@@ -1,0 +1,8 @@
+/opt/st/stm32cubeide_2.1.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/arm-none-eabi/include/c++/14.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	1
+../Src/class_struct_header.cpp:43:1:LED::LED(GPIO_RegDef_t*, uint8_t)	2
+../Src/class_struct_header.cpp:59:6:void LED::Ledoff()	1
+../Src/class_struct_header.cpp:63:6:void LED::Toggle()	1
+../Src/class_struct_header.cpp:67:6:void LED::delay()	2
+../Src/class_struct_header.cpp:77:2:SWITCH::SWITCH(GPIO_RegDef_t*, uint8_t)	2
+../Src/class_struct_header.cpp:87:6:int SWITCH::read()	1
+../Src/class_struct_header.cpp:93:5:int main()	2

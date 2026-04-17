@@ -1,0 +1,10 @@
+../Core/Src/USART.cpp:85:5:int main()	16	static
+../Core/Src/USART.cpp:140:6:void SystemClock_Config()	88	static
+../Core/Src/USART.cpp:184:13:void MX_GPIO_Init()	56	static
+../Core/Src/USART.cpp:319:6:void USART3_init()	4	static
+../Core/Src/USART.cpp:350:6:void USART3_write(uint8_t)	16	static
+../Core/Src/USART.cpp:359:6:void USART3_write_string(const char*)	16	static
+../Core/Src/USART.cpp:370:6:void LED_init()	4	static
+../Core/Src/USART.cpp:381:6:void delayMs(int)	24	static
+../Core/Src/USART.cpp:399:6:void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef*)	16	static
+../Core/Src/USART.cpp:416:6:void Error_Handler()	4	static

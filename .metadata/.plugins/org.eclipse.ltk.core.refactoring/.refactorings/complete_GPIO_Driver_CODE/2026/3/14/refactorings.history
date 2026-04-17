@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;ENUM_gpio/Src/gpio_driver.cpp&apos; to &apos;gpio_enum.cpp&apos;" description="Rename resource &apos;gpio_driver.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Src/gpio_driver.cpp" name="gpio_enum.cpp" stamp="1774935883640" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;complete_GPIO_Driver_CODE/Src/gpio_enum.cpp&apos; to &apos;gpio_driver.cpp&apos;" description="Rename resource &apos;gpio_enum.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Src/gpio_enum.cpp" name="gpio_driver.cpp" stamp="1774937819500" updateReferences="true"/>
+</session>

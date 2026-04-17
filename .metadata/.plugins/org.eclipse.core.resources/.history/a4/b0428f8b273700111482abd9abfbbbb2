@@ -1,0 +1,94 @@
+/*
+ * usart.cpp
+ *
+ *  Created on: Apr 13, 2026
+ *      Author: dell
+ */
+#include <usart.h>
+
+static void GPIO_EnableClock(GPIO_TypeDef *port)
+{
+	if(port==GPIOA)
+		RCC->AHB1ENR|=(1<<0);
+	if(port==GPIOB)
+			RCC->AHB1ENR|=(1<<1);
+	if(port==GPIOC)
+			RCC->AHB1ENR|=(1<<2);
+	if(port==GPIOD)
+			RCC->AHB1ENR|=(1<<3);
+
+}
+
+static void USART_EnableClock(USART_TypeDef *instance)
+{
+    if(instance == USART1)
+    	RCC->APB2ENR |= (1<<4);
+    if(instance == USART2)
+    	RCC->APB1ENR |= (1<<17);
+    if(instance == USART3)
+    	RCC->APB1ENR |= (1<<18);
+}
+
+static void GPIO_Config_AF(GPIO_PinConfig_t *pin)
+{
+    GPIO_TypeDef *port = pin->port;
+    uint8_t p = pin->pin;
+
+    port->MODER &= ~(3<<(p*2));
+    port->MODER |= (2<<(p*2));
+
+    if(p < 8)
+    {
+        port->AFR[0] &= ~(0xF<<(p*4));
+        port->AFR[0] |= (pin->alternate_function<<(p*4));
+    }
+    else
+    {
+        p -= 8;
+        port->AFR[1] &= ~(0xF<<(p*4));
+        port->AFR[1] |= (pin->alternate_function<<(p*4));
+    }
+}
+
+void USART_Init(USART_Handle_t *husart)
+{
+    USART_EnableClock(husart->instance);
+
+    GPIO_EnableClock(husart->config.tx_pin.port);
+    GPIO_EnableClock(husart->config.rx_pin.port);
+
+    GPIO_Config_AF(&husart->config.tx_pin);
+    GPIO_Config_AF(&husart->config.rx_pin);
+
+    /* Baudrate (example for 16MHz) */
+    husart->instance->BRR = 16000000 / husart->config.baudrate;
+
+    /* Enable TX + RX */
+    husart->instance->CR1 |= (1<<3);
+    husart->instance->CR1 |= (1<<2);
+
+    /* Enable USART */
+    husart->instance->CR1 |= (1<<13);
+}
+
+void USART_SendChar(USART_Handle_t *husart, char data)
+{
+    while(!(husart->instance->SR & (1<<7)));
+    husart->instance->DR = data;
+}
+
+void USART_SendString(USART_Handle_t *husart, const char *str)
+{
+    while(*str)
+    {
+        USART_SendChar(husart,*str++);
+    }
+}
+
+char USART_ReadChar(USART_Handle_t *husart)
+{
+    while(!(husart->instance->SR & (1<<5)));
+    return husart->instance->DR;
+}
+
+
